@@ -7,12 +7,13 @@ $(document).on('pagebeforeshow', function(){
   // console.log('reset');
 });
 
-$(function() {
+$(document).ready(function() {
+  console.log('fading');
   $('.fade-in').fadeIn('slow');
   $('.fade-in-seq').each(function(i) {
     $(this).delay(50 * i).fadeIn('slow');
-  })
-})
+  });
+});
 
 $('.article-card').hover(function() {
   $(this).find('.article-title').toggleClass('highlight');
@@ -45,4 +46,4 @@ $(document).click(function(e) {
         $(this).delay(50 * i).fadeOut(500);
       });
     }
-})
+});
