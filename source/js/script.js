@@ -22,10 +22,6 @@ $('.article-card').click(function() {
   $(this).find('.article-title').addClass('highlight');
 });
 
-$('.article-card').tap(function() {
-  $(this).find('.article-title').addClass('highlight');
-});
-
 $('.burger-icon').click(function() {
   $(this).toggleClass('clicked');
   if(!menu_show) {
