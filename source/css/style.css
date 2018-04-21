@@ -173,6 +173,7 @@ body  {
 
 .footer{
   margin-top: -4rem;
+  padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: 'source-sans-pro', sans-serif;
   font-size: 0.8rem;
@@ -185,6 +186,14 @@ body  {
 }
 
 /* misc */
+.fade-in {
+  display: none;
+}
+
+.fade-in-seq {
+  display: none;
+}
+
 .img-assembly {
   margin-top: rem;
   margin-bottom: 2rem;
