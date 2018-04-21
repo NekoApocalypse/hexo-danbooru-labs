@@ -24,6 +24,7 @@ body  {
 .font-title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  position: relative;
 }
 
 .font-title-cn {
@@ -186,6 +187,10 @@ body  {
 }
 
 /* misc */
+a {
+  outline: 0;
+}
+
 .fade-in {
   display: none;
 }
@@ -209,6 +214,13 @@ body  {
 .link-clear {
   color: inherit !important;
   text-decoration: inherit !important;
+}
+
+.beta {
+  color: #6c757d;
+  font-variant: small-caps;
+  font-size: 30%;
+  padding-left: 0.5em;
 }
 
 /* mobile */
@@ -327,6 +339,6 @@ body  {
   }
 
   .article-meta {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
