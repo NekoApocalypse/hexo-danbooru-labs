@@ -14,14 +14,15 @@ body  {
 /* header */
 
 .header {
-  border-bottom:0.1rem solid #000;
+  border-bottom:1px solid #000;
   padding-top: 3rem;
   padding-bottom: 3rem;
   position: relative;
+  font-style: normal;
 }
 
 .font-title {
-  font-family: 'PT', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
@@ -173,12 +174,20 @@ body  {
 .footer{
   margin-top: -4rem;
   padding-bottom: 1rem;
+  font-family: 'source-sans-pro', sans-serif;
+  font-size: 0.8rem;
+}
+
+.footer a {
+  color: inherit !important;
+  text-decoration: inherit !important;
+  font-weight: lighter;
 }
 
 /* misc */
 .img-assembly {
   margin-top: rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   z-index: 0;
   border: solid 0.15rem #000;
   border-radius: 1rem;
@@ -186,6 +195,11 @@ body  {
 
 .to-top {
   z-index: 50;
+}
+
+.link-clear {
+  color: inherit !important;
+  text-decoration: inherit !important;
 }
 
 /* mobile */
