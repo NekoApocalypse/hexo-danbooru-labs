@@ -1,0 +1,12 @@
+mixin make_post(item)
+  a(href= url_for(item.path)).col-md-9.mx-auto.article-card
+    .article-title 
+      span
+        img(src='/images/cardboard-box-trimmed.png', alt='box').img-responsive.article-icon
+      span
+        h3.title-title!= item.title
+    .article-abstract!= item.excerpt
+    p.article-meta
+      span= date(item.date, 'YYYY MMM DD')
+      span.float-right NekoApocalypse
+      

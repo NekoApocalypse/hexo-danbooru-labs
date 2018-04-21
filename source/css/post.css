@@ -1,0 +1,26 @@
+.article-wrap {
+  flex-grow: 1;
+}
+
+.article-panel {
+  font-family: "source-han-serif-sc";
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  min-height: 100%;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(140,140,140,0.39);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(140,140,140,0.39);
+  box-shadow: 0px 2px 5px 0px rgba(140,140,140,0.39);
+}
+
+.title-string,.date-string {
+  font-family: "source-han-sans-simplified-c";
+}
+
+.title-string {
+  font-size: 1.5rem;
+}
+
+.date-string {
+  color: grey;
+}

@@ -1,0 +1,10 @@
+extends partial/layout.pug
+
+block body
+  .container.main
+    section.row.article-box
+      - page.posts.each(function(item) {
+          include mixins.pug
+          +make_post(item)
+      - })
+      
