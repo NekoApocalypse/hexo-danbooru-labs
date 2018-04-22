@@ -8,6 +8,13 @@ $(window).on('unload', function() {
   // console.log('reset');
 });
 
+window.addEventListener('pagehide', function() {
+  $(document).find('.highlight').removeClass('highlight');
+  $(document).find('.clicked').removeClass('clicked');
+  $(document).find('.float-menu li').hide();
+}, false);
+
+
 $(document).ready(function() {
   $(document).find('.highlight').removeClass('highlight');
   $(document).find('.clicked').removeClass('clicked');
