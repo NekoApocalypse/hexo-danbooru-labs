@@ -26,6 +26,17 @@
   color: grey;
 }
 
+h4 {
+  font-family: "source-han-sans-simplified-c";
+  font-size: 1.3rem ;
+  margin-bottom: 1rem;
+}
+
+figure.plain {
+  max-width: 100%;
+  overflow: scroll;
+}
+
 @media screen and (max-width: 767px) {
   .article-panel {
     padding: 2rem;
