@@ -1,6 +1,5 @@
 
 $(window).on('unload', function() {
-  console.log('unload');
   $(document).find('.highlight').removeClass('highlight');
   $(document).find('.clicked').removeClass('clicked');
   $(document).find('.float-menu li').hide();
@@ -8,7 +7,10 @@ $(window).on('unload', function() {
 });
 
 $(document).ready(function() {
-  console.log('ready');
+  $(document).find('.highlight').removeClass('highlight');
+  $(document).find('.clicked').removeClass('clicked');
+  $(document).find('.float-menu li').hide();
+
   let menuShow = false;
   $('.float-menu li').hide();
 
@@ -24,7 +26,7 @@ $(document).ready(function() {
   $('.article-card').on('click', function() {
     $(this).find('.article-title').addClass('highlight');
   });
-  
+
   var burgerClick = function() {
     console.log($(this));
     $(this).toggleClass('clicked');
