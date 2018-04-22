@@ -1,3 +1,5 @@
+ // iOS sticky hover fix
+ (function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document);
 
 $(window).on('unload', function() {
   $(document).find('.highlight').removeClass('highlight');
