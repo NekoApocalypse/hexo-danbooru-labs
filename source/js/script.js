@@ -1,5 +1,3 @@
-let menu_show = false;
-
 $(window).on('unload', function() {
   console.log('unload');
   $(document).find('.highlight').removeClass('highlight');
@@ -11,9 +9,9 @@ $(window).on('unload', function() {
 $(document).ready(function() {
   console.log('ready');
 
-  $('.fade-in').fadeIn('slow');
+  $('.fade-in').addClass('show');
   $('.fade-in-seq').each(function(i) {
-    $(this).delay(50 * i).fadeIn('slow');
+    $(this).delay(50 * i).addClass('show');
   });
 
   $('.article-card').hover(function() {
@@ -24,15 +22,17 @@ $(document).ready(function() {
     $(this).find('.article-title').addClass('highlight');
   });
 
+  let menuShow = false;
+
   $('.burger-icon').click(function() {
     $(this).toggleClass('clicked');
     if(!menu_show) {
-      menu_show = true;
+      menuShow = true;
       $('.float-menu li').each(function(i) {
         $(this).delay(50 * i).fadeIn(500);
       });
     } else {
-      menu_show = false;
+      menuShow = false;
       $('.float-menu li').each(function(i){
         $(this).delay(50 * i).fadeOut(500);
       });
@@ -42,7 +42,7 @@ $(document).ready(function() {
   $(document).click(function(e) {
     if ($(e.target).closest('.burger-icon').length === 0) {
         $('.burger-icon').removeClass('clicked');
-        menu_show = false;
+        menuShow = false;
         $('.float-menu li').each(function(i){
           $(this).delay(50 * i).fadeOut(500);
         });

@@ -192,9 +192,23 @@ a {
 }
 
 .fade-in {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 .fade-in-seq {
+  opacity: 0;
+  transition: opacity, 0.5s;
+}
+
+.fade-in-seq.show {
+  opacity: 1;
+  transition: opacity, 1s;
 }
 
 .img-assembly {
