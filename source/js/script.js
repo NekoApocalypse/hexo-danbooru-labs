@@ -1,6 +1,3 @@
- // iOS sticky hover fix
- (function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document);
-
 $(window).on('unload', function() {
   $(document).find('.highlight').removeClass('highlight');
   $(document).find('.clicked').removeClass('clicked');
@@ -20,7 +17,7 @@ $(document).ready(function() {
   $(document).find('.clicked').removeClass('clicked');
   $(document).find('.float-menu li').hide();
 
-  let menuShow = false;
+  var menuShow = false;
   $('.float-menu li').hide();
 
   $('.fade-in').addClass('show');
