@@ -8,7 +8,7 @@ body  {
 
 #wrap {
   min-height: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 
 /* header */
@@ -174,12 +174,12 @@ body  {
 /* footer */
 
 .footer{
-  margin-top: -5rem;
+  margin-top: -6rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: 'source-sans-pro', sans-serif;
   font-size: 0.8rem;
-  height: 5rem;
+  height: 6rem;
 }
 
 .footer a {
