@@ -6,3 +6,5 @@ block body
       h1.title-string=page.title
       p.date-string= date(page.date, 'YYYY MMM DD') + ' NekoApocalypse'
       .article-content!=page.content
+      p=url_for(page.path)
+
