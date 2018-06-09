@@ -8,6 +8,7 @@ block body
       .article-content!=page.content
       p#post-url.nodisplay='https://danbooru-labs.moe'+url_for(page.path)
       p#post-identifier.nodisplay=page.path
+      #disqus_thread
   script(src='/js/include-disqus.js')
   noscript Please enable JavaScript to view the 
     a(href="https://disqus.com/?ref_noscript") comments powered by Disqus.
