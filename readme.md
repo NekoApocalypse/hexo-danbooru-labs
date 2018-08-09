@@ -2,4 +2,4 @@
 
 Work in progress.
 
-Demo: http://danbooru-labs.moe/
+Demo: https://danbooru-labs.moe/
