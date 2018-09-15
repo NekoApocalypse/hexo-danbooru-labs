@@ -182,7 +182,8 @@ body  {
 }
 
 .footer a {
-  color: inherit !important;
+  /* color: inherit !important; */
+  color: #6c757d !important;
   text-decoration: inherit !important;
   font-weight: lighter;
 }
