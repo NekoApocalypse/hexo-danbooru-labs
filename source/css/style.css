@@ -353,6 +353,9 @@ a {
     padding: 0rem;
     font-size: 1rem;
     margin-bottom: 0rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    min-height: 3.3rem;
   }
 
   .article-meta {
