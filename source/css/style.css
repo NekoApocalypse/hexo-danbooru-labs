@@ -119,6 +119,7 @@ body  {
   font-family: 'Source Sans Pro', sans-serif;
   font-family: "source-han-sans-simplified-c";
   font-size: 1.5rem;
+  line-height: 0.8;
   color: #000;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
@@ -161,7 +162,7 @@ body  {
 .article-abstract {
   font-family: "source-han-serif-sc";
   font-size: 1.1rem;
-  height: 4rem;
+  min-height: 4rem;
   padding-top: 0rem;
 }
 
@@ -341,6 +342,7 @@ a {
 
   .title-title {
     font-size: 1rem;
+    display: inline;
   }
 
   .article-icon {
